@@ -7,13 +7,13 @@ This package is a wrapper for abdulmueid/mpesa-php-api to integrate M-Pesa API i
 For more information of what's M-Pesa, please refer to M-Pesa official website:
 **https://www.vm.co.mz/en/M-Pesa2**
 
-# This packages is still in development, so don't use it in production
+# This package is still in development, so don't use it in production
 
 # 1. Installation
 
 All that you have to do is the following:
 
-**The code isn't in packagist (https://packagist.org) yet.**
+# The code isn't in packagist (https://packagist.org) yet.
 
 ```
 composer require calvinchiulele/mpesa-mz
@@ -70,9 +70,9 @@ return [
     'origin' => env('MPESA_ORIGIN', null),
 
     /*
-    |--------------------------------------------------------------------------
+    |--------------------------------------------------------------------------------------
     | Service Provider Code of M-Pesa API
-    |--------------------------------------------------------------------------
+    |--------------------------------------------------------------------------------------
     |
     | Here you may specify the service provider code of M-Pesa provided by Vodacom to you
     |
