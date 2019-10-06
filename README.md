@@ -12,7 +12,9 @@ For more information of what's M-Pesa, please refer to M-Pesa official website:
 # 1. Installation
 
 All that you have to do is the following:
+
 **The code isn't in packagist (https://packagist.org) yet.**
+
 ```
 composer require calvinchiulele/mpesa-mz
 ```
