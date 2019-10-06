@@ -1,0 +1,23 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: circleci/php:latest
+    working_directory: ~/mpesa-mz
+    steps:
+      - checkout
+      - run: sudo docker-php-ext-install zip
+      - run: sudo docker-php-ext-install
+      - run: sudo composer self-update
+      - restore_cache:
+          keys:
+            - composer-v1-{{ checksum "composer.lock" }}
+            - composer-v1-
+      - run: composer install -n --prefer-dist
+      - save_cache:
+          key: composer-v1-{{ checksum "composer.lock" }}
+          paths:
+            - vendor
+      - run:
+          name: Run PHPUnit tests
+          command: ./vendor/bin/phpunit tests -vvv

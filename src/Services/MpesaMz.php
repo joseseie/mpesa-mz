@@ -7,13 +7,17 @@ use abdulmueid\mpesa\Config;
 
 /**
  * Class MpesaMz
+ *
  * @package calvinchiulele\MPesaMz\Services
  * @author Calvin Chiulele <cchiulele@protonmail.com>
  * @since 0.1.0
+ * @see Transaction
  */
 class MpesaMz
 {
     /**
+     * Class that defines all the M-Pesa API transactions
+     *
      * @var Transaction
      */
     protected $transaction;

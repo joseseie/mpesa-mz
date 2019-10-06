@@ -1,5 +1,7 @@
 <?php
 
+namespace calvinchiulele\MPesaMz\Facades;
+
 use Illuminate\Support\Facades\Facade;
 
 /**

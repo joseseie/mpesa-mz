@@ -18,9 +18,9 @@ class MpesaMzTransactionTest extends TestCase
     }
 
     /**
+     * Test the logic for the payment
      *
-     *
-     *
+     * @return void
      */
     public function testPayment()
     {
