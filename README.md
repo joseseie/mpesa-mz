@@ -211,7 +211,11 @@ class ExampleController extends Controller
 
 ```
 
-**The part that I'm proud of is located at:**
+**This package is still in development so any suggestions, improvements and recommendations are welcomed.**
+
+# AIRBNB
+
+**The part of the code that I'm proud of is located at:**
 ```
 src/Services/MpesaMz.php - line 37 to 48
 
@@ -233,5 +237,3 @@ class to \abdulmueid\mpesa\Transaction, a class which is responsabile to manage 
 requests related M-Pesa API. I also used the Single Responsability Principle in the design
 of that class
 ```
-
-**This package is still in development so any suggestions, improvements and recommendations are welcomed.**
