@@ -43,7 +43,7 @@ Where xxx is your data.
 
 And the `config/mpesa-config.php` would be like that:
 
-```
+```php
 <?php
 
 return [
@@ -126,7 +126,7 @@ service container.
 
 # Using the facade
  
-```
+```php
 <?php
 
 namespace App\Http\Controllers;
@@ -166,7 +166,7 @@ class ExampleController extends Controller
 
 # Using the instance from service container
  
-```
+```php
 <?php
 
 namespace App\Http\Controllers;
