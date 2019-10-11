@@ -40,9 +40,14 @@ MPESA_INITIATOR_IDENTIFIER=xxx
 MPESA_SECURITY_CREDENTIAL=xxx
 ```
 
+Where xxx is your data.
+**Note: You've to either use MPESA_API_HOST to reflect to "api.sandbox.vm.co.mz" or production URL from M-Pesa API**
+
 And the config/mpesa-config.php would be like that:
 
 ```
+<?php
+
 return [
     /*
     |--------------------------------------------------------------------------
@@ -52,7 +57,7 @@ return [
     | Here you may specify the public key provided by Vodacom to you
     |
     */
-    'public_key' => env('MPESA_PUBLIC_KEY', null),
+    'public_key' => env('MPESA_PUBLIC_KEY', ''),
 
     /*
     |--------------------------------------------------------------------------
@@ -72,7 +77,7 @@ return [
     | Here you may specify the API key provided by Vodacom to you
     |
     */
-    'api_key' => env('MPESA_API_KEY', null),
+    'api_key' => env('MPESA_API_KEY', ''),
 
     /*
     |--------------------------------------------------------------------------
@@ -82,7 +87,7 @@ return [
     | Here you may specify the API key provided by Vodacom to you
     |
     */
-    'origin' => env('MPESA_ORIGIN', null),
+    'origin' => env('MPESA_ORIGIN', ''),
 
     /*
     |--------------------------------------------------------------------------
@@ -92,7 +97,7 @@ return [
     | Here you may specify the service provider code of M-Pesa provided by Vodacom to you
     |
     */
-    'service_provider_code' => env('MPESA_SERVICE_PROVIDER_CODE', null),
+    'service_provider_code' => env('MPESA_SERVICE_PROVIDER_CODE', ''),
 
     /*
     |--------------------------------------------------------------------------
@@ -102,7 +107,7 @@ return [
     | Here you may the initiator identifier provided by Vodacom to you
     |
     */
-    'initiator_identifier' => env('MPESA_INITIATOR_IDENTIFIER', null),
+    'initiator_identifier' => env('MPESA_INITIATOR_IDENTIFIER', ''),
 
     /*
     |--------------------------------------------------------------------------
@@ -112,7 +117,7 @@ return [
     | Here you may specify the security credential provided by Vodacom to you
     |
     */
-    'security_credential' => env('MPESA_SECURITY_CREDENTIAL', null)
+    'security_credential' => env('MPESA_SECURITY_CREDENTIAL', '')
 ];
 ```
 
