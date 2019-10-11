@@ -1,10 +1,10 @@
 # Laravel Package for Vodacom Mozambique M-Pesa
 
-This package is a wrapper for abdulmueid/mpesa-php-api to integrate M-Pesa API easier in Laravel applications
+This package is a wrapper for **abdulmueid/mpesa-php-api** to integrate M-Pesa API easier in Laravel applications
 
 For more information of what's M-Pesa, please refer to M-Pesa official website: https://www.vm.co.mz/en/M-Pesa2
 
-For more information of what abdulmueid/mpesa-php-api is, refer to https://github.com/abdulmueid/mpesa-php-api
+For more information of what abdulmueid/mpesa-php-api is, refer to [https://github.com/abdulmueid/mpesa-php-api](https://github.com/abdulmueid/mpesa-php-api)
 
 # 1. Installation
 
@@ -18,8 +18,8 @@ php artisan vendor:publish
 ```
 
 When you hit the above command in terminal, you will be provided a list of all service providers registered 
-in your application. Choose the CalvinChiulele\MPesaMz\Providers\MPesaMzServiceProvider and hit enter.
-Now if you check your config folder, you'll find your mpesa-config.php file in there.
+in your application. Choose the `CalvinChiulele\MPesaMz\Providers\MPesaMzServiceProvider` and hit enter.
+Now if you check your config folder, you'll find your `mpesa-config.php` file in there.
 
 # 2. Configuration
 
@@ -41,7 +41,7 @@ MPESA_SECURITY_CREDENTIAL=xxx
 Where xxx is your data.
 **Note: You've to either use MPESA_API_HOST to reflect to "api.sandbox.vm.co.mz" or production URL from M-Pesa API**
 
-And the config/mpesa-config.php would be like that:
+And the `config/mpesa-config.php` would be like that:
 
 ```
 <?php
