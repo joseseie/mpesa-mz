@@ -128,7 +128,7 @@ service container.
 
 namespace App\Http\Controllers;
 
-use calvinchiulele\MPesaMz\Facades\MPesaMzFacade;
+use CalvinChiulele\MPesaMz\Facades\MPesaMzFacade;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
@@ -176,7 +176,7 @@ class ExampleController extends Controller
     /**
      * M-Pesa service class
      *
-     * @var calvinchiulele\MPesaMz\Services\MpesaMz
+     * @var CalvinChiulele\MPesaMz\Services\MpesaMz
      */
      protected $mpesaService;
 
@@ -187,7 +187,7 @@ class ExampleController extends Controller
      */
      public function __construct()
      {
-         $this->mpesaService = app('mpesamz');
+         $this->mpesaService = app('CalvinChiulele\MPesaMz\Services\MpesaMz');
      }
 
     /**
