@@ -12,12 +12,16 @@ For more information of what abdulmueid/mpesa-php-api is, refer to https://githu
 
 All that you have to do is the following:
 ```
-composer require calvin/mpesa-mz
+composer require calvinchiulele/mpesa-mz
 ```
 
 ```
-php artisan vendor:publish --providor=calvinchiulele\MPesaMz\Providers\MPesaMzServiceProvider --tag=config
+php artisan vendor:publish
 ```
+
+When you hit the above command in terminal, you will be provided a list of all service providers registered 
+in your application. Choose the CalvinChiulele\MPesaMz\Providers\MPesaMzServiceProvider and hit enter.
+Now if you check your config folder, you'll find your mpesa-config.php file in there.
 
 # 2. Configuration
 
